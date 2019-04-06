@@ -13,20 +13,20 @@ body {
     height: auto;
 }
 
+.logo {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 17px;
+}
+
 /* CSS Checkbox Hack: adapted from https://css-tricks.com/the-checkbox-hack/ */
 #checkbox-hack {
     position: absolute;
     size:30px 30px;
     top: 40px;
     left: 185px;
- }
-
- /* CSS Checkbox Hack: adapted from https://css-tricks.com/the-checkbox-hack/ */
- .menu-list {
-    width: 400px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
+    opacity: 0;
  }
  
  /* CSS Checkbox Hack: adapted from https://css-tricks.com/the-checkbox-hack/ */
@@ -51,24 +51,26 @@ body {
     color: #000000;
     text-align: left;
  }
-
-.logo {
-    color: #fff;
-    font-size: 40px;
-    text-transform: uppercase;
-    margin: 17px;
+.header_menu {
+    width:100%;
 }
+ .menu-list {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+ }
 
 .menu-list ul {
+    width: 100%;
     display: flex;
     list-style: none;
-    margin-top: 30px;
     flex-flow: row;
+    justify-content: space-evenly;
+    width: auto;
 }
 
 .menu-list ul li {
     flex: 1;
-    text-align: center;
 }
 
 .menu-list ul li a{
@@ -94,6 +96,7 @@ body {
     align-items: center;
     flex-direction: column;
     text-shadow: 2px 2px 5px #000;
+    color: #ffffff;
 }
 
 .introduction h1{
@@ -102,13 +105,11 @@ body {
     margin-top: 13%;
     text-transform: uppercase;
     font-weight: bold;
-    color: #ffffff;
 }
 
 .introduction p{ 
     text-align: center;
     font-size: 1.75em;
-    color: #fff;
 }
 
 .introduction button{
@@ -255,11 +256,9 @@ input:focus {
 
 .support button:hover {
     background-color: #fff;
-    color: #000;
 }
 
 .footerLinks{
-    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -273,7 +272,7 @@ input:focus {
 
 .footerLinks a{
     text-decoration: inherit;
-    color: #000;
+    color:rgb(0, 0, 0);
 }
     
 .footerLinks ul li{
@@ -291,7 +290,7 @@ input:focus {
     list-style: none;
     margin-top: 20px;
     padding-bottom: 20px; 
-    border-bottom: 1px solid #ffba3f;
+    border-bottom: 3px solid #ffd080;
 }
 
 /* tutorial on social media icons: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/ 
@@ -311,12 +310,15 @@ input:focus {
 }
 
 .email-list {
-    margin-top: 6%; 
+    margin-top: 25px; 
     padding-left: 10px;
 }
 
 .email-list p {
     font-size: .8em;
+    padding-bottom: 25px;
+    padding-left:0px;
+    border-bottom: 2px solid #ffd080;
 }
 
 .email-list button{
@@ -362,15 +364,25 @@ input:focus {
 
 input:focus {
     outline: none;
-    border-color: #000000;
-    border-width: 2px; 
+    border: 2px solid #000000;
     background-color: #cfcdc8;
 }
 
 
 @media screen and (max-width: 870px){
     .header_menu ul {
+        width: 400px;
         opacity: 0;
+    }
+
+    .menu-list a {
+        margin-left: 10px;
+        padding-right: auto;
+        transition: ease-in-out 250ms;
+    }
+
+    .menu-list a:hover {
+        border-bottom: 2px solid #000000;
     }
 
     .toggle {
@@ -381,12 +393,29 @@ input:focus {
         width: 24px !important;
         height: 24px !important;
     } 
+
+    #checkbox-hack {
+		height: 30px;
+		opacity: 0;
+	}
 }
 
 @media screen and (min-width: 870px){
     .header_menu i{
         display: none;
     }
+
+    .menu-list {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #checkbox-hack {
+		height: 0px;
+        margin:0;
+        top:0px;
+        left:0px;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -407,6 +436,18 @@ input:focus {
 
     .footerLinks ul li{
         display: none;
+    }
+
+    .call_to_action {
+        padding-right: 0px;
+    }
+
+    .call_to_action h3{
+        padding-right: 10px;
+    }
+
+    .call_to_action p{
+        padding-right: 10px;
     }
 
     .footerLinks{

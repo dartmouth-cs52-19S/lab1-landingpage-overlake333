@@ -14,7 +14,7 @@ body {
 }
 
 /* CSS Checkbox Hack: adapted from https://css-tricks.com/the-checkbox-hack/ */
-input[type=checkbox] {
+#checkbox-hack {
     position: absolute;
     size:30px 30px;
     top: 40px;
@@ -26,12 +26,11 @@ input[type=checkbox] {
     width: 400px;
     height: 100px;
     line-height: 100px;
-    color: white;
     text-align: center;
  }
  
  /* CSS Checkbox Hack: adapted from https://css-tricks.com/the-checkbox-hack/ */
- input[type=checkbox]:checked ~ .menu-list {
+ #checkbox-hack:checked ~ .menu-list {
     background-color: #cfcdc8;
     margin: 100% 100%;
     flex-flow: column;
@@ -40,14 +39,14 @@ input[type=checkbox] {
     opacity: 1;
  }
 
- input[type=checkbox]:checked ~ .menu-list ul {
+ #checkbox-hack:checked ~ .menu-list ul {
     display:flex;
     background-color: #cfcdc8;
     flex-flow: column;
     opacity: 1;
  }
 
- input[type=checkbox]:checked ~ .menu-list ul li {
+ #checkbox-hack:checked ~ .menu-list ul li {
     flex:1;
     color: #000000;
     text-align: left;
@@ -60,26 +59,25 @@ input[type=checkbox] {
     margin: 17px;
 }
 
-.header_menu ul {
+.menu-list ul {
     display: flex;
     list-style: none;
     margin-top: 30px;
     flex-flow: row;
 }
 
-.header_menu ul li {
-    color: #fff;
+.menu-list ul li {
     flex: 1;
     text-align: center;
 }
 
-.header_menu ul li a{
+.menu-list ul li a{
     color: #fff;
     font-size:20px;
     text-decoration: none;
 }
 
-.header_menu ul li a:hover{
+.menu-list ul li a:hover{
     color: rgb(170, 170, 170);
 }
 
@@ -207,18 +205,16 @@ input:focus {
     background-position: center;
     background-size: 100% auto;
     color: #fff;
+    font-size: 1.5em;
     padding: 7%;
+    text-shadow: 2px 2px 5px #000;
 }
 
 .stories h3{
-    font-size: 1.5em;
-    text-shadow: 2px 2px 5px #000;
     padding-bottom: 10px;
 }
 
 .stories p{
-    font-size: 1.5em;
-    text-shadow: 2px 2px 5px #000;
     font-style: italic;
     text-align: right;
 }
@@ -373,30 +369,6 @@ input:focus {
 
 
 @media screen and (max-width: 870px){
- /*   .header_menu ul {
-        display: flex;
-        list-style: none;
-        margin-top: 30px;
-        flex-flow: column;
-    }
-    
-    .header_menu ul li {
-        color: #fff;
-        flex: 1;
-        text-align: left;
-        padding: 15px;
-    }
-    
-    .header_menu ul li a{
-        color: #fff;
-        font-size:20px;
-        text-decoration: none;
-    }
-    
-    .header_menu ul li a:hover{
-        color: rgb(170, 170, 170);
-    } */
-
     .header_menu ul {
         opacity: 0;
     }
@@ -428,15 +400,11 @@ input:focus {
         display: flex;
         margin-top: 10%;
     }
-}
 
-@media screen and (max-width: 600px){
     .emailInput{
         width: 90%;
     }
-}
 
-@media screen and (max-width: 600px){
     .footerLinks ul li{
         display: none;
     }

@@ -1,0 +1,458 @@
+*{margin:0; padding:0; font-family: 'Noto Sans', sans-serif;};
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;
+}
+
+.top_bar {
+    position: fixed; 
+    background-color: #000;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+/* CSS Checkbox Hack: adapted from https://css-tricks.com/the-checkbox-hack/ */
+input[type=checkbox] {
+    position: absolute;
+    size:30px 30px;
+    top: 40px;
+    left: 185px;
+ }
+
+ /* CSS Checkbox Hack: adapted from https://css-tricks.com/the-checkbox-hack/ */
+ .menu-list {
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    text-align: center;
+ }
+ 
+ /* CSS Checkbox Hack: adapted from https://css-tricks.com/the-checkbox-hack/ */
+ input[type=checkbox]:checked ~ .menu-list {
+    background-color: #cfcdc8;
+    margin: 100% 100%;
+    flex-flow: column;
+    text-align: left;
+    justify-content: left;
+    opacity: 1;
+ }
+
+ input[type=checkbox]:checked ~ .menu-list ul {
+    display:flex;
+    background-color: #cfcdc8;
+    flex-flow: column;
+    opacity: 1;
+ }
+
+ input[type=checkbox]:checked ~ .menu-list ul li {
+    flex:1;
+    color: #000000;
+    text-align: left;
+ }
+
+.logo {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 17px;
+}
+
+.header_menu ul {
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    flex-flow: row;
+}
+
+.header_menu ul li {
+    color: #fff;
+    flex: 1;
+    text-align: center;
+}
+
+.header_menu ul li a{
+    color: #fff;
+    font-size:20px;
+    text-decoration: none;
+}
+
+.header_menu ul li a:hover{
+    color: rgb(170, 170, 170);
+}
+
+/* background image (original version): https://www.picbear.org/media/BorGQqEFZ_9*/
+.introduction {
+    background-image: url(img/country_roads_bw.jpg); 
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding: 10% 0;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.introduction h1{
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    margin-top: 13%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.introduction p{ 
+    text-align: center;
+    font-size: 1.75em;
+    color: #fff;
+}
+
+.introduction button{
+    background-color: #ffba3f;
+    color: black;
+    font-size: 16px;
+    margin-top: 10%;
+    padding: 13px 23px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+      
+.introduction button:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.call_to_action {
+    flex-direction: column;
+    text-align: right;
+    align-items: right;
+    color: #fff;
+    background-color: rgb(66, 66, 66);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    height: auto;
+    padding-right: 5%;
+    padding-top: 9%;
+    padding-bottom: 9%;
+}
+
+.call_to_action h3 {
+    font-size: 2.5em;
+}
+
+.call_to_action p {
+    font-size: 1.25em;
+    margin-top: 2%;
+}
+
+.form {
+    flex-flow: row;
+    flex-basis: left;
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 13px 23px;
+    border-radius: 5px;
+}
+
+.call_to_action button{
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    padding: 13px 23px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+      
+.call_to_action button:hover {
+    background-color: #ffba3f;
+    color: black;
+}
+
+/* adapted from: https://www.w3schools.com/tags/tag_input.asp */
+.emailInput {
+    width: 70%;
+    height: 40px;
+    font-size: 22px;
+    align-items: left;
+    -webkit-border-radius: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+/* adapted from: https://www.w3schools.com/tags/tag_input.asp */
+input:focus {
+    outline:none;
+    border-color: #ffba3f;
+    border-width: 2px; 
+    background-color: #cfcdc8;
+}
+
+/* background image: https://farm9.staticflickr.com/8311/29983934736_d098a9819a_b.jpg*/
+.stories {
+    background-image: url(img/tent.jpg);
+    background-position: center;
+    background-size: 100% auto;
+    color: #fff;
+    padding: 7%;
+}
+
+.stories h3{
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px #000;
+    padding-bottom: 10px;
+}
+
+.stories p{
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px #000;
+    font-style: italic;
+    text-align: right;
+}
+
+.support {
+    background-color: #000;
+    background-position: center;
+    background-size: 100% auto;
+    color: #fff;
+    padding: 9%;
+}
+
+.support h3{
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px #000;
+    padding-bottom: 10px;
+}
+
+.support p{
+    font-size: 1.25em;
+    text-shadow: 2px 2px 5px #000;
+    font-style: italic;
+    text-align: left;
+}
+
+.support button{
+    background-color: #ffba3f;
+    color: black;
+    font-size: 16px;
+    padding: 13px 23px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 30px;
+}
+
+.support button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.footerLinks{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+    text-decoration: inherit!important;
+    padding: 5px;
+    margin: 10px;
+}
+
+.footerLinks a{
+    text-decoration: inherit;
+    color: #000;
+}
+    
+.footerLinks ul li{
+    list-style-type: none;
+    font-weight: small;
+    font-style: italic;
+    padding: 5px;
+}
+
+/* tutorial on how to create horizontal lines in CSS:
+    https://smallbusiness.chron.com/create-horizontal-rules-css-48910.html*/
+.social_media_list {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    margin-top: 20px;
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #ffba3f;
+}
+
+/* tutorial on social media icons: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/ 
+.fa {
+    flex-flow: row;
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: rgb(99, 99, 99);
+  }
+  
+.fa:hover {
+      opacity: 0.7;
+}
+
+.email-list {
+    margin-top: 6%; 
+    padding-left: 10px;
+}
+
+.email-list p {
+    font-size: .8em;
+}
+
+.email-list button{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 6px 23px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+      
+.email-list button:hover {
+    background-color: rgb(109, 109, 109);
+    border-color: #000000;
+    border-width: 2px; 
+    border-radius: 5px;
+}
+
+.sign-up {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    align-items: left;
+    -webkit-border-radius: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+.sign-up h4 {
+    font-size: 1em;
+}
+
+.sign-up-list {
+    flex-flow: row;
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    margin-top: 20px;
+    padding-bottom: 20px; 
+}
+
+input:focus {
+    outline: none;
+    border-color: #000000;
+    border-width: 2px; 
+    background-color: #cfcdc8;
+}
+
+
+@media screen and (max-width: 870px){
+ /*   .header_menu ul {
+        display: flex;
+        list-style: none;
+        margin-top: 30px;
+        flex-flow: column;
+    }
+    
+    .header_menu ul li {
+        color: #fff;
+        flex: 1;
+        text-align: left;
+        padding: 15px;
+    }
+    
+    .header_menu ul li a{
+        color: #fff;
+        font-size:20px;
+        text-decoration: none;
+    }
+    
+    .header_menu ul li a:hover{
+        color: rgb(170, 170, 170);
+    } */
+
+    .header_menu ul {
+        opacity: 0;
+    }
+
+    .toggle {
+        text-align: right;
+        flex-flow:column;
+        justify-content: center;
+        padding-top: 14px;
+        width: 24px !important;
+        height: 24px !important;
+    } 
+}
+
+@media screen and (min-width: 870px){
+    .header_menu i{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .form{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .form button{
+        display: flex;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .emailInput{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .footerLinks ul li{
+        display: none;
+    }
+
+    .footerLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #cfcdc8;
+        text-align: left;
+        padding: 30px;
+    }
+
+    .footerLinks ul a {
+        width: 100%;
+        border-width: 100%;
+        border-bottom: 1px solid #fad596;
+    }
+}

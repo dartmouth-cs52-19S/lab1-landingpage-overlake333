@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head class="header_bar">    
-        <a url="olstaylor.me">Moto</a>
-        <div id="header_menu">
-            <ul> 
-                <li><a href="#">Motorcycles</a></li>
-                <li><a href="#">Travel Map</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Learn to Ride</a></li>
-                <li><a href="#">About Me</a></li>
-            </ul>
-        </div>
+    <head class="header_bar">  
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body id="home_page">
-        <div id="content">
-            <section class="Introduction">
-                <h1>Introducing Moto</h1>
-                <p>Come along for the ride! Join my motorcycle blog. </p>
+        <div class="top_bar">
+            <a class="logo" url="olstaylor.me">Moto</a>
+            <nav class="header_menu">
+                <div class ="toggle">
+                    <!--Adapted from: https://css-tricks.com/the-checkbox-hack/-->
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <input type="checkbox" id="toggle-1">
+                    <div class="menu-list">   
+                        <ul> 
+                            <li><a href="#">Motorcycles</a></li>
+                            <li><a href="#">Travel Map</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Learn to Ride</a></li>
+                            <li><a href="#">About Me</a></li>
+                        </ul>
+                    </div> 
+                </div>  
+            </nav>
+        </div>
+
+        <div class="content">
+            <section class="introduction">
+                <h1>Welcome to Moto</h1>
+                <p>Come along for the ride.</p>
                 <button>Let's Motor</button>
             </section>
         
-            <section class="call_to_action"></section>
+            <section class="call_to_action">
                 <h3>Want to follow all the action?</h3>
-                <p>Join the MotoCrew and recieve email notification when I post new content. </p>
-                <input type="text" name="Email address" value="Email address"> <br>
-                <button>Join Now</button>
+                <p>Join the MotoCrew and recieve email notification when I post new content.</p>
+                <ul class="form">
+                    <li class="emailInput">
+                        <input type="text" class="emailInput" name="Email address" value="Email address"> <br>
+                    </li>
+                    <li>
+                        <button>Join Now</button>
+                    </li>
+                </ul>
             </section>
 
-            <section class="stories"></section>
-                <h3>On a bike no one ever asks, "Are we there yet?"</h3>
-                <p>Stacy Westfall</p>
+            <section class="stories">
+                <h3>On a bike no one ever asks, </h3>
+                <h3>"Are we there yet?"</h3>
+                <p>~ Stacy Westfall</p>
             </section>
 
-            <section class="support"></section>
+            <section class="support">
                 <h3>Help Support Me</h3>
                 <p>Gas is expensive! Any donation helps! Thank you!</p>
                 <button>Donate Now</button>
@@ -42,22 +63,71 @@
     </body>
 
     <footer>
-        <div id="content">
-            <i class="#">icon</i>
-            <ul class="social_media_icons">
-                <li class="facebook"><a href="#">facebook</a></li>
-                <li class="twitter"><a href="#">twitter</a></li>
-                <li class="google"><a href="#">Google</a></li>
-                <li class="pinterest"><a href="#">pinteresst</a></li>
-                <li class="instagram"><a href="#">instagram</a></li>
+        <div class="social-icons">
+            <ul class="social_media_list">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-google"></a></li>
+                <li><a href="#" class="fa fa-pinterest"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
             </ul>  
         </div>
 
-        <div id="form">
-            <p>Join the MotoCrew email list</p>
-            <input type="text" name="Email address" value="Email address"> <br>
-            <button>Sign me up</button> 
+        <div class="email-list">
+            <h4>Join the email list</h4>
+            <ul class="sign-up-list">
+                    <li class="email-sign-up">
+                        <input type="text" class="sign-up" name="Email address" value="Email address"> <br>
+                    </li>
+                    <li>
+                        <button>Join Now</button>
+                    </li>
+                </ul>
             <p>By signing up, you agree to recieve email notifications, information, and news from Moto.</p>
+        </div>
+
+        <!-- Tutorial w/ nested list example:  https://www.w3schools.com/html/html_lists.asp -->
+        <div id="footLinks">
+            <ul class="footerLinks">
+                <ul><a href="#">About Me</a>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                </ul>
+                <ul><a href="#">Career Center</a>  
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                </ul>
+                <ul><a href="#">My Buisness</a>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                </ul>
+                <ul><a href="#">Online Community</a>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                </ul>
+                <ul><a href="#">Quick Links</a>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                    <li><a href="#">Link</li>
+                </ul>
+            </ul>  
         </div>
     </footer>
 </html>

@@ -9,6 +9,7 @@ I have always wanted to take my bike cross-country and document the process.
 
 ## HTML Structure
 
+![HTML structure](https://Users/taylor/Desktop/IMG_2471.jpg)
 
 lab1-landingpage-overlake333 created by GitHub Classroom
 

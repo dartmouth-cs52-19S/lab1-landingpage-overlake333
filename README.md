@@ -4,7 +4,7 @@ I mimicked the structure of the page but with my own content - a motorcycle blog
 Using Chrome DevTools, I mimicked the Starbuck's website's structure and style. My webpage has a responsive navigation menu, expanding images, hover states, text inputs, and footer links. 
 
 I was inspired to create a motorcycle blog because, as someone who rides motorcycles,
-I have always wanted to take my bike cross-country and document the process. 
+I have always wanted to take my bike cross-country and document the adventure. 
 
 What worked: 
 - using the Chrom Devtools to make small stylistic choices before editing the actual html file.\ 

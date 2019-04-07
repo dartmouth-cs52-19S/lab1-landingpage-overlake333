@@ -28,9 +28,11 @@ This is the original HTML structure of my landing page.
 Completed the CSS Checkbox Hack as well as adding special transitions to hovered links. 
 
 ![Checking menu](../gh-pages/img/Screen Shot 2019-04-06 at 9.13.41 PM.png)
+
 The CSS transitions (height, color, size, border, rotation) for the call to action button. 
 
 ![Checking menu](../gh-pages/img/Screen Shot 2019-04-06 at 9.14.16 PM.png)
+
 The responsive text input for email addresses. 
 
 

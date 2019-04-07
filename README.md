@@ -15,23 +15,24 @@ What didn't work:
 - using background images without the correct dimensions - the image would either wrap or warps. 
 - loosing organization in my CSS file - with such a long file, classes would tend get lost if not kept in a particular order
 - using different types of units for sizing - it makes changing texts/sizing difficult.
+- trying to add .png images to this READ.me - you really need .jpg
 
 
 ## HTML Structure
 ![HTML structure](../gh-pages/img/IMG_2471.jpg)
 
-This is the original HTML structure of my landing page. 
+This is the original HTML structure of my landing page. There are a few more links at the very bottom of the page that were cut off by the photo. 
 
 ## Special Features
-![Checking menu](../gh-pages/img/Screen Shot 2019-04-06 at 9.13.05 PM.png)
+![Checking menu](../gh-pages/img/menu.jpg)
 
 Completed the CSS Checkbox Hack as well as adding special transitions to hovered links. 
 
-![Checking menu](../gh-pages/img/Screen Shot 2019-04-06 at 9.13.41 PM.png)
+![Checking menu](../gh-pages/img/callToAction.jpg)
 
 The CSS transitions (height, color, size, border, rotation) for the call to action button. 
 
-![Checking menu](../gh-pages/img/Screen Shot 2019-04-06 at 9.14.16 PM.png)
+![Checking menu](../gh-pages/img/inputText.jpg)
 
 The responsive text input for email addresses. 
 

@@ -17,6 +17,8 @@ What didn't work:
 - using different types of units for sizing - it makes changing texts/sizing difficult.
 - trying to add .png images to this READ.me - you really need .jpg
 
+URL to Starbucks: 
+https://www.starbucks.com/
 
 ## HTML Structure
 ![HTML structure](../gh-pages/img/IMG_2471.jpg)
